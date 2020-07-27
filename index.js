@@ -30,7 +30,7 @@ const db = knex({
     searchPath: ['knex', 'public']
   }); 
 
-const app = express();
+const app = express();     
 app.use(bodyParser.json());
 
 app.use(
