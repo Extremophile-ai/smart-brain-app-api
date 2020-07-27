@@ -28,7 +28,7 @@ const db = knex({
     client: 'pg',
     connection: process.env.DATABASE_URL,
     searchPath: ['knex', 'public']
-  });
+  }); 
 
 const app = express();
 app.use(bodyParser.json());
