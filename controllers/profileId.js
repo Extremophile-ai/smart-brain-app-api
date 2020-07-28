@@ -14,3 +14,7 @@ const handleProfileId =  (db)=>(req, res) =>{
 
 
 export default handleProfileId;
+
+// module.exports={
+//   handleProfileId:handleProfileId
+// }

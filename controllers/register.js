@@ -1,6 +1,6 @@
 
 
-const handleRegister = (db, bcrypt)=>(req, res)=>{
+const handleRegister = (db, bcrypt) => (req, res)=>{
     const {email, name, password, entries}= req.body;
     if(!email ||!name || !password){
         return res.status(400).json('Please fill the required fields');
@@ -33,3 +33,7 @@ const handleRegister = (db, bcrypt)=>(req, res)=>{
 }
 
 export default handleRegister;
+
+// module.exports={
+//     handleRegister:handleRegister
+// }

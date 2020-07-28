@@ -4,12 +4,12 @@ import bcrypt         from 'bcrypt-nodejs';
 import cors           from 'cors';
 import pg             from 'pg';
 import knex           from 'knex';
-import handleRegister       from '../controllers/register';
-import handleLogin          from '../controllers/login';
-import handleProfileId      from '../controllers/profileId';
+import handleRegister       from './controllers/register';
+import handleLogin          from './controllers/login';
+import handleProfileId      from './controllers/profileId';
 import { handleEntries,
-        handleApiCall}      from '../controllers/entries';
-import getUsers       from '../controllers/users';
+        handleApiCall}      from './controllers/entries';
+import getUsers       from './controllers/users';
 import dotenv         from 'dotenv'; 
 
 dotenv.config(); 

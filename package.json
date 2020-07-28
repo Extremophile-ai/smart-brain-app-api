@@ -8,9 +8,10 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node src/index.js",
-    "start:dev": "nodemon --watch"
+    "build": "babel index.js -d dist",
+    "start": "babel-watch index.js",
+    "dev-start": "babel-watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "GP",
   "license": "ISC",
@@ -25,9 +26,12 @@
     "pg": "^8.3.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.10.5",
     "@babel/core": "^7.10.5",
-    "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "babel-register": "^6.26.0",
+    "babel-watch": "^7.0.0",
     "nodemon": "^2.0.4"
   }
 }
