@@ -9,9 +9,10 @@
   "main": "index.js",
   "scripts": {   
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "babel index.js controllers --out-dir build",
-    "start": "node ./build/index.js",
-    "dev": "nodemon --exec babel-node index.js"
+    "build" : "babel src  --out-dir build",
+    "start": "npm run build && node ./build/index.js",
+    "serve": " node ./build/index.js",
+    "dev": "nodemon --exec babel-node src/index.js" 
   },
   "author": "GP",
   "license": "ISC",

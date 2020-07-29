@@ -12,15 +12,15 @@ var _pg = _interopRequireDefault(require("pg"));
 
 var _knex = _interopRequireDefault(require("knex"));
 
-var _register = _interopRequireDefault(require("../build/register"));
+var _register = _interopRequireDefault(require("./controllers/register"));
 
-var _login = _interopRequireDefault(require("../build/login"));
+var _login = _interopRequireDefault(require("./controllers/login"));
 
-var _profileId = _interopRequireDefault(require("../build/profileId"));
+var _profileId = _interopRequireDefault(require("./controllers/profileId"));
 
-var _entries = require("../build/entries");
+var _entries = require("./controllers/entries");
 
-var _users = _interopRequireDefault(require("../build/users"));
+var _users = _interopRequireDefault(require("./controllers/users"));
 
 var _dotenv = _interopRequireDefault(require("dotenv"));
 
