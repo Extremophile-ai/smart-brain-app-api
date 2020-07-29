@@ -5,7 +5,7 @@ const getUsers = (db) =>(req, res) =>{
         // console.log(users)
         res.json(users);
     })
-    .catch(err =>res.status(400).json('Unable to get users'))
+    .catch(err =>res.status(400).json(`${err}, Unable to get users`))
 }
 
 export default getUsers;
