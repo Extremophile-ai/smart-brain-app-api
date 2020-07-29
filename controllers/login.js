@@ -24,8 +24,8 @@ const handleLogin = (db, bcrypt) => (req, res) =>{
  }
 
 
-//  export default handleLogin;
+ export default handleLogin;
 
-module.exports ={
-    handleLogin:handleLogin
-}
+// module.exports ={
+//     handleLogin:handleLogin
+// }

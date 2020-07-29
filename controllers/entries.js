@@ -1,6 +1,4 @@
-// import Clarifai from 'clarifai';
-
-const Clarifai = require('clarifai');
+import Clarifai from 'clarifai';
 
 const app = new Clarifai.App({
     apiKey: '203ada3476814a199357484e55133ff3'
@@ -29,12 +27,12 @@ const handleEntries = (req, res, db) => {
 }
 
 
-// export  {
-//      handleEntries,
-//      handleApiCall
-// }
-
-module.exports ={
-    handleEntries:handleEntries,
-     handleApiCall:handleApiCall
+export  {
+     handleEntries,
+     handleApiCall
 }
+
+// module.exports ={
+//     handleEntries:handleEntries,
+//      handleApiCall:handleApiCall
+// }
