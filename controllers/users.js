@@ -8,4 +8,8 @@ const getUsers = (db) =>(req, res) =>{
     .catch(err =>res.status(400).json('Unable to get users'))
 }
 
-export default getUsers;
+// export default getUsers;
+
+module.exports={
+    getUsers:getUsers
+}
