@@ -46,7 +46,7 @@ app.get('/users', getUsers(db));
 app.post('/login', handleLogin( db, bcrypt)); 
 app.post('/register', handleRegister( db, bcrypt));
 app.get('/profile/:id', handleProfileId(db));   
-app.put('/entries', (req, res)=>{handleEntries.handleEntries(req, res, db)});  
+app.put('/entries', (req, res)=>{handleEntries(req, res, db)});  
 app.post('/imageUrl', (req, res)=>{handleApiCall(req, res)});
 
 app.listen(process.env.PORT || 3005, ()=> {
